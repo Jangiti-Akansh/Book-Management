@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.splitleft, .splitright {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    background-color: #e6f7ff;
+}
+
+
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#bookdatalist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#bookdatalist li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#bookdatalist li:hover {
+    background-color: #d1ecf1;
+    cursor: pointer;
+}
+
+#formbook label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#formbook input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+
+#addbk {
+    background-color: #28a745;
+}
+
+
+#editbk {
+    background-color: #17a2b8;
+}
+
+#deletebk {
+    background-color: #d32f2f;
+}
+
+#clearall {
+    background-color: #ff9800;
+    margin-top: 20px;
+}
+
+#addbk:hover, #editbk:hover, #deletebk:hover, #clearall:hover {
+    background-color: grey;
+}

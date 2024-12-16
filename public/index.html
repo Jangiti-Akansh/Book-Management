@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="bookdata" class="splitleft">
+            <h2>Books Collection</h2>
+            <p>Select any of the books below to get the details in the right.</p>
+            <ul id="bookdatalist">
+            </ul>
+        </div>
+        <div id="formbook" class="splitright">
+            <h1>Books Management and Details</h1>
+            <p>Scroll down to Add, Update, Delete or Clear the fields.</p>
+            <form id="bookform">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Title of Book" required><br><br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Author of the book" required><br><br>
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" placeholder="Genre" required><br><br>
+                <label for="publicationYear">Publication Year:</label>
+                <input type="number" id="publicationYear" name="publicationYear" placeholder="Year of Publication" required><br><br>
+                <label for="language">Language:</label>
+                <input type="text" id="language" name="language" placeholder="Language" required><br><br>
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" placeholder="Price" required><br><br>
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" placeholder="ISBN" required><br><br>
+                <label for="publisher">Publisher:</label>
+                <input type="text" id="publisher" name="publisher" placeholder="Publisher" required><br><br>
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" placeholder="Rating" required><br><br>
+                <button id="addbk" type="button" onclick="addBook()">Add Book</button>
+                <button id="editbk" type="button" onclick="editBook()">Edit Book</button>
+                <button id="deletebk" type="button" onclick="deleteBook()">Delete Book</button><br>
+                <button id="clearall" type="button" onclick="clearFields()">Clear Fields</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
